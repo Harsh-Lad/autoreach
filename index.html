@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickle and Paddle Ball News</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .coming-soon {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .description {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            border: 2px solid #000;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #666;
+        }
+        .card:hover p {
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <span class="coming-soon">Coming Soon</span>
+            <h1>Your Source for Pickle and Paddle Ball News</h1>
+            <p class="description">Stay updated with the latest news, rankings, and global coverage</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🏆</div>
+                <h3>Player Rankings</h3>
+                <p>Live rankings and statistics of top players worldwide</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">📰</div>
+                <h3>Latest News</h3>
+                <p>Breaking news and updates from tournaments and events</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🌎</div>
+                <h3>Global Coverage</h3>
+                <p>Comprehensive coverage from tournaments worldwide</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
