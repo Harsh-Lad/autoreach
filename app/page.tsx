@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { CheckCircle2, BarChart2, Zap, Shield, Workflow, MessageSquareMore, Link as LinkIcon, ArrowRight, ChevronRight, Globe, Building2, Laptop, User, Bot, Mail, BrainCircuit } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -46,13 +47,15 @@ export default function Home() {
               Reimagined with AI
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Transform your customer interactions with AutoReach's intelligent platform that combines AI support agents with personalized marketing automation.
+              Transform your customer interactions with AutoReach&rsquo;s intelligent platform that combines AI support agents with personalized marketing automation.
             </p>
             <div className="flex gap-4 justify-center">
+              <Link  href="/register">
               <Button size="lg" className="h-12 px-6">
                 Start Free Trial
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              </Link>
             </div>
             <div className="mt-8 flex items-center justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center">
